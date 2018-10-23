@@ -1,0 +1,43 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\yarn\bin\yarn.js add ejs
+
+PATH: 
+  D:\H5\Git\mingw64\bin;D:\H5\Git\usr\bin;C:\Users\zhangshuaiqi\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;D:\H5\Git\cmd;C:\Program Files\TortoiseSVN\bin;C:\Program Files\VisualSVN Server\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\zhangshuaiqi\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\zhangshuaiqi\AppData\Roaming\npm;C:\Users\zhangshuaiqi\AppData\Roaming\nvm;C:\Program Files\nodejs;D:\H5\Microsoft VS Code Insiders\bin
+
+Yarn version: 
+  1.10.1
+
+Node version: 
+  10.12.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 104.16.23.35:443
+      at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1113:14)
+
+npm manifest: 
+  {
+    "name": "newsmanage2",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.3",
+      "debug": "~2.6.9",
+      "ejs": "~2.5.7",
+      "express": "~4.16.0",
+      "http-errors": "~1.6.2",
+      "mongoose": "*",
+      "morgan": "~1.9.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

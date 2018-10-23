@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    table{width: 80%;border-collapse:collapse;margin: 0 auto;text-align: center;}
+    td{border: 1px solid #333;}
+    .now{display: block;width: 40px;margin: 0 auto;}
+</style>
+<body>
+    <a href="/news/newsadd" class="now">新增</a>
+    <table cellpadding="15" cellspacing="5">
+        <tr>
+            <td>标题</td>
+            <td>作者</td>
+            <td>来源</td>
+            <td>时间</td>
+            <td>操作</td>
+        </tr>
+        <%for(var i=0;i<newsdata.length;i++){%>
+            <tr>
+                <td><a href="/news/newsview/<%=newsdata[i]._id%>"><%=newsdata[i].title%></a></td>
+                <td><%=newsdata[i].source%></td>
+                <td><%=newsdata[i].author%></td>
+                <td><%=newsdata[i].ctime%></td>
+                <td>
+                    <a href="/news/edit/<%=newsdata[i]._id%>">修改</a>
+                    <a href="/news/delete/<%=newsdata[i]._id%>">删除</a>
+                </td>
+            </tr>
+        <%}%>
+    </table>
+</body>
+</html>
